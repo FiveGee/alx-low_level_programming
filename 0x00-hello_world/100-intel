@@ -1,7 +1,2 @@
 #!/bin/bash
-read -p "100-intel: " CFILE
-
-gcc -S -masm=intel "$CFILE" -o "${CFILE%.*}.s"
-
-echo "Assembly code saved to ${CFILE%.*}.s"
-
+gcc -S -masm=intel $CFILE

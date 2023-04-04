@@ -2,12 +2,13 @@
 
 /**
  * _strstr - function finds the substring
+ *
  * @haystack - string to be searched
  * @needle - first occurrence of the substring
  *
- * Return: a pointer to the beginning of the located substring
+ * Return: a pointer to the beginning of the substring
  *
- * If substring is not found NULL
+ * if not found NULL
  */
 
 char *_strstr(char *haystack, char *needle)

@@ -6,9 +6,7 @@
  * @haystack - string to be searched
  * @needle - first occurrence of the substring
  *
- * Return: a pointer to the beginning of the substring
- *
- * if not found NULL
+ * Return: a pointer to the beginning of the substring, @NULL if not found
  */
 
 char *_strstr(char *haystack, char *needle)

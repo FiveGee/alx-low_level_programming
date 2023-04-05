@@ -2,8 +2,8 @@
 
 /**
  * _puts_recursion - prints a string
- * @s: the string
- * Return: void
+ * @s:the string
+ * Return:void
  */
 
 void _puts_recursion(char *s);
@@ -15,5 +15,8 @@ void _puts_recursion(char *s);
 	}
 
 	else
+	{
 		_putchar('0')
+}
+
 }

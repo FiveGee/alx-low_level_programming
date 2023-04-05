@@ -1,13 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _puts_recursion - prints a string
- * @s:sthe string
- * Return: void
+ * @s:the string
+ * Return:void
  */
 
 
-void _puts_recursion(char *s) 
+void _puts_recursion(char *s)
+
 {
   if (*s == '\0') 
   {

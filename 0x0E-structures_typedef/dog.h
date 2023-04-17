@@ -1,6 +1,3 @@
-#ifndef DOG
-#define DOG
-
 /**
  * struct dog - Defines a dog structure
  * @name: The name of the dog
@@ -17,6 +14,12 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - Typedef for struct dog
+ */
+
+typedef struct dog dog_t;
 
 /**
  * init_dog - Initializes a dog structure
@@ -41,12 +44,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
 /**
- * dog_t - Typedef for struct dog
- */
-
-typedef struct dog dog_t;
-
-/**
  * new_dog - Creates a new dog structure
  * @name: The name of the dog
  * @age: The age of the dog
@@ -69,5 +66,30 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
-#endif /* DOG */ 
+/**
+ * _strcpy - Copies a string to a buffer
+ * @dest: Pointer to the buffer to copy to
+ * @src: Pointer to the string to copy
+ *
+ * Return: Pointer to the buffer
+ *
+ * Description: This function copies the string pointed to by src to the buffer
+ *              pointed to by dest.
+ */
+
+char *_strcpy(char *dest, char *src);
+
+/**
+ * _strlen - Computes the length of a string
+ * @s: Pointer to the string to compute the length of
+ *
+ * Return: The length of the string
+ *
+ * Description: This function computes the length of the string pointed to by s.
+ */
+
+int _strlen(char *s);
+
+#endif /* DOG */
+
 

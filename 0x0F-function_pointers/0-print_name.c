@@ -1,18 +1,18 @@
-#ifndef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_H
+#include "function_pointers.h"
+#include <stdio.h>
 
 /**
- * print_name - a function that prints a name.
- * @name: the name given
- * @f: function of name
+ * print_name - Prints a name using pointer to function
+ * @name: String to add
+ * @f: Pointer to function
  *
- * Return: void
- */
+ * Return: Nothing
+ **/
 void print_name(char *name, void (*f)(char *))
 {
-    if (name != NULL && f != NULL)
-        f(name);
-}
+if (name == NULL || f == NULL)
+return;
 
-#endif /* FUNCTION_POINTERS_H */
+f(name);
+}
 
